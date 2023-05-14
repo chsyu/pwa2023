@@ -80,7 +80,7 @@ export default function Header({ title, slogan }) {
           <UserInfo className={styles.hideInMobile} />
           <CartSummary />
         </div>
-        <div className={styles.headerContentWrap}>
+        {/* <div className={styles.headerContentWrap}>
           <div className={styles.left}>
             <motion.h1 className={styles.text} variants={typingContainer} initial="hidden" animate="show">
               {
@@ -99,7 +99,7 @@ export default function Header({ title, slogan }) {
             <motion.button className={styles.buttonOrder} variants={buttonProduct} initial="hidden" animate="show">Order now</motion.button>  
           </div>
 
-        </div>
+        </div> */}
         <hr className={styles.hrHeaderLine} />
 
       </div>
