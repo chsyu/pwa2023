@@ -24,11 +24,12 @@ function ProductDetail({ product, isLoading }) {
             lg={{ span: 6 }}
          >
             <Skeleton loading={isLoading} active>
-               <img
+               {/* <img
                   alt={product.name}
                   className={styles.image}
                   src={product.image}
-               />
+               /> */}
+               <p>TEST</p>
             </Skeleton>
          </Col>
          <Col
