@@ -9,7 +9,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       workbox: {
         globPatterns: [
-          '**/*.{js,css,html,json,ico,png,svg}',
+          '**/*.{js,css,html,json,ico,png,webp,svg}',
         ],
         globDirectory: 'dist/',
         swDest: 'dist/sw.js',
