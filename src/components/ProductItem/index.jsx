@@ -25,7 +25,9 @@ export default function ProductItem({ product }) {
             <img
                style={{ width: '100%' }}
                src={product.image}
-               alt={product.name} />
+               alt={product.name} 
+               loading="lazy" 
+            />
          </Link>
          <div className={styles.info}>
             <h6 className={styles.category}>
