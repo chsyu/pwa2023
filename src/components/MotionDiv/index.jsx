@@ -4,7 +4,7 @@ const MotionDiv = ({ children, className }) => {
    return (
       <motion.div
          className={className}
-         initial={{ opacity: 1 }}
+         initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          transition={{ duration: 3 }}
       >

@@ -8,11 +8,15 @@ export default defineConfig({
     VitePWA({ 
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: [
-          '**/*.{js,css,html,json,ico,png,webp,svg}',
+        runtimeCaching: [
+          {
+            urlPattern: /(.*?)\.(png|jpe?g|svg|gif|webp)/, 
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'image-cache',
+            },
+          },
         ],
-        globDirectory: 'dist/',
-        swDest: 'dist/sw.js',
      },
      includeAssets: ['favicon.svg'],
      manifest: {

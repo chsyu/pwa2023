@@ -16,7 +16,7 @@ function Home() {
   const products = data || [{id:1},{id:2},{id:3},{id:4},{id:5},{id:6}];
 
   return (
-    <div className="mainLayout">
+    <MotionDiv className="mainLayout">
       <Helmet>
         <title>{title}</title>
         <style>{`
@@ -35,7 +35,7 @@ function Home() {
         <ProductList products={products} isLoading={isLoading} />
       </div>
       <Footer className="layoutFooter" />
-    </div>
+    </MotionDiv>
   );
 }
 
